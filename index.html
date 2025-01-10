@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--El charset permite usar caracteres especiales-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+    <!--Estilo css-->
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+    <!--<h1>Titulo</h1>
+    <h2>Subtitulo</h2>
+    <h3>Subtitulo del subtitulo</h3>
+    <h4>Subtitulo del subtitulo</h4>
+    <h5>Subtitulo del subtitulo</h5>
+    <h6>Subtitulo del subtitulo</h6> 
+
+    
+        <!-Cabezera de mi pagina web-->
+    <section class="container">
+        <div>
+            <header>
+                <h1>
+                    <!--titulo de mi pagina-->
+                    Captree
+                </h1>
+                <nav>
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#sobrenosotros" class="nav-link">Sobre nosotros</a>
+                    <a href="https://www.facebook.com/?locale=es_LA" class="nav-link">Contactos</a>
+                    <a href="#calendario" class="nav-link">Calendario</a>
+                </nav>
+            </header>
+        </div><!--fin del header-->
+        <!--contenido principal-->
+        <div>
+            <section id="inicio" class="section">
+                <h2>Bienvenidos a mi huevo 2025 renovado</h2>
+                <p>Los huevos mas esperados del año</p>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="img/AdobeStock_126016889apaisado.jpg" alt="jaja un pc" style="width: 30%;">
+                        <img src="img/imagen1.jpeg" alt="">
+                        <img src="img/imagen2.jpeg" alt="">
+                        <img src="img/imagen3.jpeg" alt="">
+
+                    </div>
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)">back</button>
+                    <button class="carousel-btn next" onclick="moveSlide(1)">next</button>
+
+                </div>
+
+            </section><!--fin de inicio-->
+            <section id="sobrenostros" class="section">
+                <h2>Juegos 2025</h2>
+                <ol>
+                    <li>Futbol</li>
+                    <li>Pelea</li>
+                    <li>Puzzle</li>
+                    <li>Guerra</li>
+                    <li>Carros</li>
+                </ol>
+
+            </section><!--fin sobre nosotros-->
+            <!--calendario de desarrollo-->
+            <section id="calendario" class="section">
+                <h2>Calendariode desarrollo</h2>
+                <table class="table">
+                    <tr>
+                        <th>id</th>
+                        <th>Fecha</th>
+                        <th>Nombre</th>
+                        <th>Categoría</th>
+                        <th>imagen</th>
+
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>12/12/2024</td>
+                        <td>Gta5</td>
+                        <td>Aventura</td>
+                        <td><img src="img/GTAV_Gen9_MFT_Webstore_Hero_3840x2160_DELIV.jpg" alt="jaja un pc"
+                                style="width: 25%;"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>12/12/2024</td>
+                        <td>Call of duty</td>
+                        <td>Guerra</td>
+                        <td><img src="img/call of duty.jpg" alt="jaja un pc" style="width: 25%;"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>12/12/2024</td>
+                        <td>Fifa25</td>
+                        <td>Deporte</td>
+                        <td><img src="img/fifa25.jpg" alt="jaja un pc" style="width: 25%;"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>12/12/2024</td>
+                        <td>Apex</td>
+                        <td>Guerra</td>
+                        <td><img src="img/apex-price-change-key-art.jpg.adapt.crop16x9.431p.jpg" alt="jaja un pc"
+                                style="width: 25%;"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>12/12/2024</td>
+                        <td>Fornite</td>
+                        <td>Guerra</td>
+                        <td><img src="img/EN_BXECO_33-00_Shooter_EGS_Launcher_Blade_2560x1440_2560x1440-36e1ff15dc00cd506986a2565764bbd3.jpg"
+                                alt="jaja un pc" style="width: 25%;"></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>12/12/2024</td>
+                        <td>Minecraft</td>
+                        <td>Aventura</td>
+                        <td><img src="img/mine.webp" alt="jaja un pc" style="width: 25%;"></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>12/12/2024</td>
+                        <td>UFC</td>
+                        <td>Deporte</td>
+                        <td><img src="img/ufc5-feature-image-16x9.jpg.adapt.crop16x9.575p.jpg" alt="jaja un pc"
+                                style="width: 25%;"></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>12/12/2024</td>
+                        <td>Mario</td>
+                        <td>Aventura</td>
+                        <td><img src="img/mario.webp" alt="jaja un pc" style="width: 25%;"></td>
+                    </tr>
+
+
+                </table>
+            </section><!--fin de calendaario-->
+            <!--formulario de calendario-->
+            <section id="formulario" class="section">
+                <h2>Manejo de formularios</h2>
+                <form action="" method="post" class="form">
+                    <div class="form-group">
+                        <label class="form-label" for="nombre">Ingrese su nombre</label>
+                        <div>
+                            <input class="form-control" type="text" id="nombre" name="name" placeholder="Ingrese su nombre" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="form-label">Ingresa la contraseña</label>
+                        <div>
+                            <input type="password" name="pass" id="password" class="form-control" placeholder="Ingrese la password" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"class="form-label">Ingresa el email</label>
+                        <div>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Ingresa el email" required>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="">Ubicacion</label>
+                        <div>
+                            <select name="Ubicacion" id="Ubicacion" class="form-select">
+                                <option value="">--Seleccione una opcion--</option>
+                                <option value="Mi casa">Mi casa</option>
+                                <option value="ah eres puto">Tu casa</option>
+                                <option value="Itq">Itq</option>
+                                <option value="Casa del Teo">Casa del Teo</option>
+
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <label for="" class="form-label">Ingresa la direccion</label>
+                        <div>
+                            <textarea name="direccion" id="direccion" class="form-textarea"></textarea>
+                        </div>
+
+                    </div>
+                    <!--checkbox-->
+                    <div>
+                        <label for="">Quieres suscribirte?</label>
+                        <div>
+                            <input type="checkbox" name="Quieres suscribirte?" id="Quieres suscribirte?" required>
+                        </div>
+                    </div>
+                    <!--radiobutton-->
+                    <div>
+                        <label for="">Hombre</label>
+                        <div>
+                            <input type="radio" name="Hombre" id="Hombre">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="">Mujer</label>
+                        <div>
+                            <input type="radio" name="Mujer" id="Mujer">
+                        </div>
+                    </div>
+                    <!--boton submit-->
+                    <div class="form-group">
+                        <input type="submit" value="ENVIAR" class="form-submit">
+                    </div>
+
+
+                </form>
+
+            </section>
+
+
+        </div>
+    </section>
+
+    <script>
+        //Creamos una variable para rastear el indice que esta activo
+        let currentIndex = 0;
+        //Creamos una funcion que mueva el Slide en la direccion indicada (1 punto)
+        function moveSlide(direction) {
+            //Selecionasmos todos los elementos de las imagenes dentro carrousel
+            const slides = document.querySelectorAll('.carousel-inner img');
+            //Obtenemos el numero de imagenes
+            const totalSlides = slides.length;
+            //Actulizamos el indice actual sumando la dirección (1 0 -1)
+            currentIndex += direction;
+
+            //Si el indice es menor ah 0, vuelve al ultimo slide (ciclo infinito hacia atras)
+            if (currentIndex < 0) {
+                currentIndex = totalSlides - 1;
+            }
+
+            //Si el indice supera el ultimo slide, vuele al primero (ciclo infinito)
+            if (currentIndex >= totalSlides) {
+                currentIndex = 0;
+            }
+            
+            //Calculamos el desplazamiento del carrousel basado en le indice actual
+            const offset = -currentIndex * 100;
+            //Aplicamos el desplazamiento mediante una trasformacion css para mover en este caso los slides
+            document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+        }
+    
+        //Configuramos el cambio automático cada 5 segundos
+        setInterval(() => {
+            //LLama la funcion moveSlide con un valor de 1 para avanzar al siguiente 
+            moveSlide(1);
+        }, 5000);
+    </script>
+
+</body>
+
+</html>
